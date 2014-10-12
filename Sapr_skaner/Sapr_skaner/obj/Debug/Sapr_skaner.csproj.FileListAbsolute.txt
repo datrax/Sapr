@@ -1,0 +1,11 @@
+c:\users\datrax\documents\visual studio 2012\Projects\Sapr_skaner\Sapr_skaner\bin\Debug\Sapr_skaner.exe.config
+c:\users\datrax\documents\visual studio 2012\Projects\Sapr_skaner\Sapr_skaner\bin\Debug\Sapr_skaner.exe
+c:\users\datrax\documents\visual studio 2012\Projects\Sapr_skaner\Sapr_skaner\bin\Debug\Sapr_skaner.pdb
+c:\users\datrax\documents\visual studio 2012\Projects\Sapr_skaner\Sapr_skaner\obj\Debug\Sapr_skaner.csprojResolveAssemblyReference.cache
+c:\users\datrax\documents\visual studio 2012\Projects\Sapr_skaner\Sapr_skaner\obj\Debug\Sapr_skaner.Properties.Resources.resources
+c:\users\datrax\documents\visual studio 2012\Projects\Sapr_skaner\Sapr_skaner\obj\Debug\Sapr_skaner.csproj.GenerateResource.Cache
+c:\users\datrax\documents\visual studio 2012\Projects\Sapr_skaner\Sapr_skaner\obj\Debug\Sapr_skaner.exe
+c:\users\datrax\documents\visual studio 2012\Projects\Sapr_skaner\Sapr_skaner\obj\Debug\Sapr_skaner.pdb
+c:\users\datrax\documents\visual studio 2012\Projects\Sapr_skaner\Sapr_skaner\obj\Debug\Sapr_skaner.myform.resources
+c:\users\datrax\documents\visual studio 2012\Projects\Sapr_skaner\Sapr_skaner\obj\Debug\Sapr_skaner.Form1.resources
+C:\Users\datrax\Documents\Visual Studio 2012\Projects\Sapr_skaner\Sapr_skaner\obj\Debug\Sapr_skaner.LexemsTable.resources
