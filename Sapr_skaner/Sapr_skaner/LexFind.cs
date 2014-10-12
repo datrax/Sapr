@@ -118,6 +118,11 @@ namespace Sapr_skaner
                             {
                                 lex += Convert.ToChar(re.Read());
                             }
+                            else if (re.Peek().Equals('E'))
+                            {
+                                lex += Convert.ToChar(re.Read());
+                                mode = 6;
+                            }
                             else
                             {
                                 LexNotFound = false;
@@ -152,11 +157,7 @@ namespace Sapr_skaner
                                 lex += Convert.ToChar(re.Read());
                                 mode = 3;
                             }
-                            else if (re.Peek().Equals('E'))
-                            {
-                                lex += Convert.ToChar(re.Read());
-                                mode = 6;
-                            }
+                          
                             else
                             {
                                 lex = "_Error";
@@ -289,11 +290,12 @@ namespace Sapr_skaner
 
         public Lexems NextLex()
         {
-            //1-int 2-real 3-label
+            //1-int 2-real 3-label 4-name of program
             int IdConstCode = 0;
             string t = ChooseLexema();
             LexemCode = GetCode(t);
             LexemNumber++;
+            if (LexemCode == 1) type = 4;
             if (LexemCode == 2) type = 1;
             if (LexemCode == 3) type = 2;
             if (LexemCode == 12) type = 3;

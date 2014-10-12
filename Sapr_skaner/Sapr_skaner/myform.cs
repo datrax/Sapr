@@ -140,12 +140,20 @@ namespace Sapr_skaner
                     for (int j = 0; j < IdCode.LongCount(); j++)
                     {
                         if (Items[i].LexemName.Equals(IdCode[j]))
-                        { IdConstCode = j + 1; notfound = false; }
+                        {
+                            IdConstCode = j + 1; notfound = false;
+                            if (Items[i].type != 0) return Items[i].RowNumber;//проверка повтора в одном блоке обьявл
+                        }
                     }
                     if (notfound)
                     {
-                        IdConstCode++; IdCode.Add(Items[i].LexemName);
-                        IdType.Add(Items[i].type);
+                        if (Items[i].type == 0) return Items[i].RowNumber;//проверка инициализации переменной  
+                        
+                            IdConstCode++; IdCode.Add(Items[i].LexemName);
+                            IdType.Add(Items[i].type);
+                        
+                      
+                      
                     }
 
                     Items[i].IdConstCode = IdConstCode;
@@ -215,7 +223,7 @@ namespace Sapr_skaner
             {
                 str.Close();               
                 textBox11.Select(find_line_position(c - 1), find_line_position(c) - find_line_position(c-1));
-                textBox11.Focus();
+              //  textBox11.Focus();
                // textBox11.SelectedText = new Font(textBox11.Font.Bold, 10);
                 MessageBox.Show("Error in the line: " + c);
             };

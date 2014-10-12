@@ -2,7 +2,8 @@ init:program1
 /
 int a,b
 scan(a)
-b=3$
+exit:
+b=0.3E5
 while (a>b) do
 /
  a=a-1
@@ -12,5 +13,4 @@ while (a>b) do
    print(a)
   endif
 \
-exit:
 \
